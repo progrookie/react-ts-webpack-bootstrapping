@@ -35,7 +35,8 @@
         "url-loader": "^4.1.0",
         "webpack": "^4.44.1",
         "webpack-cli": "^3.3.12",
-        "webpack-dev-server": "^3.11.0"
+        "webpack-dev-server": "^3.11.0",
+        "webpack-hot-client": "^4.1.2"
     },
     "dependencies": {
         "classnames": "^2.2.6",
@@ -49,6 +50,7 @@
     },
     "scripts": {
         "start": "webpack-dev-server --debug --devtool cheap-module-source-map --output-pathinfo --history-api-fallback --hot --inline --progress --colors --port 3000 --open",
-        "build": "webpack -p --progress --colors"
+        "build": "webpack -p --progress --colors",
+        "debug": "node scripts/debug.js"
     }
 }
